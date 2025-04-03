@@ -29,7 +29,7 @@ jobs:
       - name: "Building Spigot"
         # !! Change 'latest' to the version what you wanted. !!
         # Also Java version need changing if you're trying building versions below 1.17.X!
-        run: "java -jar BuildTools.jar --rev latest"
+        run: "java -jar BuildTools.jar --rev 1.21.5"
       
       # Uploading the build jar files.
       - name: "Uploading Build"
