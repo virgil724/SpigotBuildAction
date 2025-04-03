@@ -24,14 +24,8 @@ jobs:
       
       # Uploading the build jar files.
       - name: Uploading Build
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: spigot
           path: ./spigot*.jar
       
-      - name: ServerChan
-        uses: yakumioto/serverchan-action@v1
-        with:
-          key: ${{ secrets.SERVERCHANKEY }}
-          text: SpigotBuildAction
-          desp: Latest spigot was just built.
