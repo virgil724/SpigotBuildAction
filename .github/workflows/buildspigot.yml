@@ -24,7 +24,7 @@ jobs:
       
       # Uploading the build jar files.
       - name: Uploading Build
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: spigot
           path: ./spigot*.jar
