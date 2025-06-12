@@ -1,9 +1,6 @@
 name: BuildSpigot with Latest BuildTools
 
 on:
-  schedule:
-    - cron: "0 0 6,12,18,24,30 * *"
-
   workflow_dispatch:
   push:
 
